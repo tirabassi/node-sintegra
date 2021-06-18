@@ -7,7 +7,7 @@ export async function setupBrowser(): Promise<Browser> {
 	const browser = await puppeteer.launch({
 		headless: false,
 		pipe: true,
-		devtools: false,
+		devtools: true,
 		args: [
 			"--disable-gpu",
 			"--disable-setuid-sandbox",

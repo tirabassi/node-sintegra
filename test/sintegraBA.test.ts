@@ -18,7 +18,7 @@ describe("test sintegra ba", () => {
 				municipio: "EUNAPOLIS",
 				cep: "45820081",
 				enderecoEletronico: "FINANCEIROGH@HOTMAIL.COM",
-				telefone: "(73) 32815347",
+				telefone: "(73 ) 32815347",
 			},
 			informacoesComplementares: {
 				atividadeEconomica: "Com�rcio varejista de produtos farmac�uticos, sem",

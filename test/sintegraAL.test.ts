@@ -36,6 +36,17 @@ describe("test sintegra al", () => {
 					descricao: "Captação, tratamento e distribuição de água",
 					indicadorPrincipal: "S",
 				},
+				{
+					atividadeContribuinteId: {
+						caceal: 24008146,
+						numeroPessoa: "2835",
+						sequencial: 18592,
+					},
+					cnpj: "12294708000181",
+					codigoCnae: "3701100",
+					descricao: "Gestão de redes de esgoto",
+					indicadorPrincipal: "N",
+				},
 			],
 			telefone: null,
 			contribuinteObrigado: {

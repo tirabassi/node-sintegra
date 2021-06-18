@@ -30,6 +30,7 @@ export async function fetchSintegra(cnpj: string): Promise<SintegraGO> {
 		await page.close();
 
 		const text = await getErrorLabelText(newPage);
+		console.log(text);
 		if (
 			text?.trim() ===
 			"Não foi encontrado nenhum contribuinte para o parâmetro informado!"
@@ -56,7 +57,14 @@ async function setupInitialPart(page: Page, cnpj: string) {
 }
 
 async function getErrorLabelText(page: Page) {
-	return await extractText(page, ERROR_LABEL_SELECTOR);
+	try {
+		const waitedEl = await page.$(ERROR_LABEL_SELECTOR);
+		console.log("achou");
+		return await page.evaluate((element) => element.textContent, waitedEl);
+	} catch (err) {
+		console.log("nao achou");
+		return await extractText(page, ERROR_LABEL_SELECTOR);
+	}
 }
 
 function getSetOfText(selector: string, page: Page) {
@@ -117,7 +125,7 @@ function buildData(data) {
 		enderecoEstabelecimento: {
 			logradouro: data.logradouro,
 			numero: data.numero,
-			quadra: data.qudra,
+			quadra: data.quadra,
 			lote: data.lote,
 			complemento: data.complemento,
 			bairro: data.bairro,

@@ -14,7 +14,7 @@ describe("test sintegra go", () => {
 			enderecoEstabelecimento: {
 				logradouro: "AVENIDA IDELFONSO CARNEIRO",
 				numero: "780",
-				quadra: undefined,
+				quadra: null,
 				lote: null,
 				complemento: null,
 				bairro: "SETOR CENTRAL",

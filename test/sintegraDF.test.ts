@@ -12,14 +12,14 @@ describe("test sintegra df", () => {
 				nomeFantasia: "CAESB",
 			},
 			endereco: {
-				logradouro: "AREA ESPECIAL 4 AVENIDA SIBIPIRUNA",
+				logradouro: "AV SIBIPIRUNA LOTES13/20",
 				numero: "",
 				complemento: "",
 				bairro: "AGUAS CLARAS",
-				municipio: "BRASíLIA",
+				municipio: "BRASILIA",
 				uf: "DF",
-				cep: "71255040",
-				telefone: "(61) 32137219",
+				cep: "71928720",
+				telefone: "(61 ) 32137478 / (61 ) 32137115",
 			},
 			informacoesComplementares: {
 				atividadePrincipal:

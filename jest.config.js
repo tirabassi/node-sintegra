@@ -9,5 +9,5 @@ module.exports = {
 	coveragePathIgnorePatterns: ["/node_modules/"],
 	coverageReporters: ["text"],
 	moduleFileExtensions: ["ts", "js"],
-	testTimeout: 50000,
+	testTimeout: 90000,
 };

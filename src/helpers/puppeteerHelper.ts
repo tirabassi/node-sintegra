@@ -10,7 +10,7 @@ export async function extractText(
 ): Promise<string | null> {
 	try {
 		const waitedEl = await page.waitForSelector(selector, {
-			timeout: options?.timeout || 500,
+			timeout: options?.timeout || 1000,
 			visible: options?.visible || true,
 		});
 		return await page.evaluate((element) => element.textContent, waitedEl);
